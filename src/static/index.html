@@ -45,6 +45,71 @@
       <p>&copy; 2023 Mergington High School</p>
     </footer>
 
-    <script src="app.js"></script>
+    <div id="activities" class="activities-container"></div>
+<link rel="stylesheet" href="styles.css" />
+<style>
+.activities-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.activity-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 2rem;
+    width: 340px;
+    transition: box-shadow 0.2s;
+}
+.activity-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+.activity-card h2 {
+    margin-top: 0;
+    color: #2a4d69;
+}
+.participants-section {
+    margin: 1em 0;
+    background: #f7f9fa;
+    border-radius: 8px;
+    padding: 0.75em 1em;
+}
+.participants-list {
+    margin: 0.5em 0 0 1em;
+    padding: 0;
+    list-style-type: disc;
+    color: #355c7d;
+}
+.participants-list li {
+    margin-bottom: 0.2em;
+    font-size: 0.98em;
+}
+form {
+    margin-top: 1em;
+    display: flex;
+    gap: 0.5em;
+}
+input[type="email"] {
+    flex: 1;
+    padding: 0.5em;
+    border-radius: 4px;
+    border: 1px solid #bfc9d1;
+}
+button[type="submit"] {
+    background: #2a4d69;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button[type="submit"]:hover {
+    background: #1e3550;
+}  
+</style>
+<script src="app.js"></script>
   </body>
 </html>
